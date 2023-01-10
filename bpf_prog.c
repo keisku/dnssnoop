@@ -88,7 +88,7 @@ parse_event(struct xdp_md *ctx, struct event *evt)
 	evt->sport = sport;
 	evt->dport = dport;
 
-	return 1;
+	return 0;
 }
 
 SEC("xdp")
